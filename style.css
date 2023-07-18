@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap');
+
+:root {
+    /* Fonte */
+    --fonte-titulo: 'Caprasimo', cursive;
+    --fonte-texto: 'Spectral', serif;
+
+    /* Cores */
+    --cor-de-fundo: #f0f0d8;
+    --cor-titulo: #f84600;
+    --cor-da-fonte: #7a8370;
+    --cor-para-link : #df8615;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-da-fonte);
+}
+
+.cabecalho {
+    padding: 4% 0% 0% 8%;
+}
+
+.cabecalho__link {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho__link__links {
+    font-family: var(--fonte-texto);
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--cor-da-fonte);
+    text-decoration: none;
+}
+
+.cabecalho__link__links:hover{
+    text-decoration: underline;
+    color: var(--cor-para-link);
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.apresentacao__texto {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.apresentacao__texto__titulo {
+    color: var(--cor-titulo);
+    font-size: 50px;
+    font-family: var(--fonte-titulo);
+    font-weight: lighter;
+}
+
+.apresentacao__texto__texto {
+    font-size: 20px;
+    font-family: var(--fonte-texto);
+    font-weight: bolder;
+}
+
+.apresentacao__texto__texto:hover {
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+.rodape{
+    background-color: var(--cor-para-link);
+    color: var(--cor-de-fundo);
+    padding: 2% 0% 5% 10% ;
+}
+
+.rodape__edicao__titulo{
+    font-family: var(--fonte-texto);
+    font-size: 16px;
+}
+
+.redes__sociais{
+    display: flex;
+    gap: 50px;
+    padding: 2% 0% 0% 0%;
+}
+
+.rodape__edicao__link{
+    border: 2px solid var(--cor-da-fonte) ;
+    width: 200px;
+    text-align: center;
+    border-radius: 100px;
+    font-size: 25px;
+    padding: 5px 0;
+    font-family: var(--fonte-texto);
+    text-decoration: none;
+    color: var(--cor-de-fundo);
+}
+
+.rodape__edicao__link:hover{
+    background-color: #FDA739;
+}
+
+.contato{
+    text-decoration: underline;
+}
+
+.contato:hover{
+    color: blue
+}
